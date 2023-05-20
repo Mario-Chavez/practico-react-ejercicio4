@@ -2,7 +2,7 @@ import { Button, Form } from "react-bootstrap";
 import ListaTareas from "./ListaTareas";
 import { useState } from "react";
 
-let nextId = 0;
+let tareaId = 0;
 
 const Formulario = () => {
     
@@ -16,10 +16,12 @@ const Formulario = () => {
        ?
              setListadoTareas([
                 ...listadoTareas,
-                { id: nextId++, tarea: tarea }
+                { id: tareaId++, tarea: tarea }
             ])
+            
         :
-            alert("debes agregar tarea")
+            alert("debes agregar tarea");
+            
     };
     
     return (
