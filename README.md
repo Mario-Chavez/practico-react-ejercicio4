@@ -1,6 +1,6 @@
-# Practica de React ejercicio 3
+# Practica de React ejercicio 4
 
-1. Mario Chavez [GitHub](https://github.com/Mario-Chavez)
+Mario Chavez [GitHub](https://github.com/Mario-Chavez)
 
 ## Clonar repo
 

@@ -12,10 +12,14 @@ const Formulario = () => {
     
     const agregarTarea = (e) => {
        e.preventDefault(); 
-       setListadoTareas([
-        ...listadoTareas,
-        { id: nextId++, tarea: tarea }
-      ]);
+       !tarea == ""
+       ?
+             setListadoTareas([
+                ...listadoTareas,
+                { id: nextId++, tarea: tarea }
+            ])
+        :
+            alert("debes agregar tarea")
     };
     
     return (
@@ -34,6 +38,7 @@ const Formulario = () => {
                     Enviar
                     </Button>
                 </Form.Group>
+                
               <ListaTareas listaTarea ={listadoTareas}  /> 
                   
             </Form>
