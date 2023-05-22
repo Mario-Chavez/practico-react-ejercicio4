@@ -14,10 +14,7 @@ const Formulario = () => {
        e.preventDefault(); 
        !tarea == ""
        ?
-             setListadoTareas([
-                ...listadoTareas,
-                { id: tareaId++, tarea: tarea }
-            ])
+             setListadoTareas([...listadoTareas,tarea])
             
         :
             alert("debes agregar tarea");
